@@ -149,8 +149,3 @@ class TfliteServer():
 if __name__=="__main__":
     srv = TfliteServer('../mnist.tflite')
     srv.listen('192.168.0.2', 32001)
-    # com = FbComm(uart='/dev/ttyUSB0')
-    # com.reqStats()
-
-    # digit = np.load('../digit.txt.npy')
-    # com.reqInference(digit)
