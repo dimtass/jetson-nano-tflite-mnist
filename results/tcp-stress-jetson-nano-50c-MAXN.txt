@@ -1,0 +1,118 @@
+This tool will spawn a number of TCP clients and will request
+the tflite server to run an inference on random data.
+Warning: there is no proper input parsing, so you need to be
+cautious and read the usage below.
+
+Usage:
+tcp-stress-tool [server ip] [server port] [number of clients]
+
+Using:
+server ip: 192.168.0.86
+server port: 32001
+number of clients: 50
+
+Spawning 50 TCP clients...
+[thread=3] Connected
+[thread=1] Connected
+[thread=2] Connected
+[thread=4] Connected
+[thread=5] Connected
+[thread=24] Connected
+[thread=27] Connected
+[thread=30] Connected
+[thread=33] Connected
+[thread=37] Connected
+[thread=3]  Inference time in ms: 9.917498
+[thread=1]  Inference time in ms: 2.675056
+[thread=2]  Inference time in ms: 2.043486
+[thread=4]  Inference time in ms: 1.646757
+[thread=5]  Inference time in ms: 1.556635
+[thread=24]  Inference time in ms: 1.379490
+[thread=30]  Inference time in ms: 6.416798
+[thread=27]  Inference time in ms: 7.322311
+[thread=33]  Inference time in ms: 4.058361
+[thread=37]  Inference time in ms: 2.337456
+[thread=10] Connected
+[thread=15] Connected
+[thread=21] Connected
+[thread=6] Connected
+[thread=13] Connected
+[thread=18] Connected
+[thread=20] Connected
+[thread=12] Connected
+[thread=11] Connected
+[thread=19] Connected
+[thread=10]  Inference time in ms: 10.124207
+[thread=29] Connected
+[thread=43] Connected
+[thread=15]  Inference time in ms: 2.694130
+[thread=21]  Inference time in ms: 1.947880
+[thread=6]  Inference time in ms: 3.828526
+[thread=13]  Inference time in ms: 1.810312
+[thread=18]  Inference time in ms: 1.301050
+[thread=20]  Inference time in ms: 12.414694
+[thread=29]  Inference time in ms: 2.587557
+[thread=43]  Inference time in ms: 1.847029
+[thread=11]  Inference time in ms: 1.823425
+[thread=12]  Inference time in ms: 1.700401
+[thread=19]  Inference time in ms: 1.496792
+[thread=16] Connected
+[thread=9] Connected
+[thread=7] Connected
+[thread=14] Connected
+[thread=8] Connected
+[thread=16]  Inference time in ms: 8.121490
+[thread=9]  Inference time in ms: 2.557755
+[thread=28] Connected
+[thread=32] Connected
+[thread=23] Connected
+[thread=31] Connected
+[thread=35] Connected
+[thread=7]  Inference time in ms: 2.191782
+[thread=25] Connected
+[thread=46] Connected
+[thread=14]  Inference time in ms: 2.725601
+[thread=8]  Inference time in ms: 1.921415
+[thread=28]  Inference time in ms: 1.384020
+[thread=32]  Inference time in ms: 1.511574
+[thread=23]  Inference time in ms: 1.459599
+[thread=31]  Inference time in ms: 1.587152
+[thread=25]  Inference time in ms: 1.634836
+[thread=35]  Inference time in ms: 9.956360
+[thread=46]  Inference time in ms: 2.547979
+[thread=45] Connected
+[thread=50] Connected
+[thread=49] Connected
+[thread=44] Connected
+[thread=47] Connected
+[thread=40] Connected
+[thread=45]  Inference time in ms: 7.202148
+[thread=50]  Inference time in ms: 4.162312
+[thread=49]  Inference time in ms: 1.921415
+[thread=44]  Inference time in ms: 1.544952
+[thread=47]  Inference time in ms: 3.370523
+[thread=40]  Inference time in ms: 1.494408
+[thread=39] Connected
+[thread=17] Connected
+[thread=36] Connected
+[thread=34] Connected
+[thread=26] Connected
+[thread=39]  Inference time in ms: 8.922577
+[thread=17]  Inference time in ms: 4.749537
+[thread=36]  Inference time in ms: 3.013849
+[thread=34]  Inference time in ms: 1.303911
+[thread=26]  Inference time in ms: 2.085686
+[thread=48] Connected
+[thread=22] Connected
+[thread=41] Connected
+[thread=42] Connected
+[thread=38] Connected
+[thread=48]  Inference time in ms: 9.536982
+[thread=22]  Inference time in ms: 4.610777
+[thread=41]  Inference time in ms: 1.559973
+[thread=42]  Inference time in ms: 1.906395
+[thread=38]  Inference time in ms: 1.608133
+
+----------------------
+Total elapsed time: 31632.184982 ms
+Average server inference time: 3.507214 ms
