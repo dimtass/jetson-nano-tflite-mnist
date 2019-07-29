@@ -1,0 +1,58 @@
+This tool will spawn a number of TCP clients and will request
+the tflite server to run an inference on random data.
+Warning: there is no proper input parsing, so you need to be
+cautious and read the usage below.
+
+Usage:
+tcp-stress-tool [server ip] [server port] [number of clients]
+
+Using:
+server ip: 127.0.0.1
+server port: 32001
+number of clients: 20
+
+Spawning 20 TCP clients...
+[thread=1] Connected
+[thread=2] Connected
+[thread=3] Connected
+[thread=4] Connected
+[thread=5] Connected
+[thread=6] Connected
+[thread=7] Connected
+[thread=8] Connected
+[thread=1]  Inference time in ms: 2.183676
+[thread=9] Connected
+[thread=15] Connected
+[thread=2]  Inference time in ms: 1.573324
+[thread=3]  Inference time in ms: 1.223564
+[thread=4]  Inference time in ms: 2.754688
+[thread=5]  Inference time in ms: 2.984762
+[thread=6]  Inference time in ms: 1.222372
+[thread=7]  Inference time in ms: 2.351522
+[thread=15]  Inference time in ms: 1.867533
+[thread=8]  Inference time in ms: 9.559631
+[thread=9]  Inference time in ms: 1.662970
+[thread=14] Connected
+[thread=17] Connected
+[thread=18] Connected
+[thread=16] Connected
+[thread=12] Connected
+[thread=19] Connected
+[thread=20] Connected
+[thread=14]  Inference time in ms: 12.571096
+[thread=19]  Inference time in ms: 1.674414
+[thread=20]  Inference time in ms: 1.842022
+[thread=17]  Inference time in ms: 2.010584
+[thread=12]  Inference time in ms: 1.318455
+[thread=18]  Inference time in ms: 1.485348
+[thread=16]  Inference time in ms: 1.561403
+[thread=11] Connected
+[thread=13] Connected
+[thread=10] Connected
+[thread=11]  Inference time in ms: 7.996559
+[thread=10]  Inference time in ms: 2.374411
+[thread=13]  Inference time in ms: 2.583742
+
+----------------------
+Total elapsed time: 3073.332787 ms
+Average server inference time: 3.048003 ms

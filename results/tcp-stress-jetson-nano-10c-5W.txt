@@ -1,0 +1,38 @@
+This tool will spawn a number of TCP clients and will request
+the tflite server to run an inference on random data.
+Warning: there is no proper input parsing, so you need to be
+cautious and read the usage below.
+
+Usage:
+tcp-stress-tool [server ip] [server port] [number of clients]
+
+Using:
+server ip: 192.168.0.86
+server port: 32001
+number of clients: 10
+
+Spawning 10 TCP clients...
+[thread=2] Connected
+[thread=1] Connected
+[thread=3] Connected
+[thread=4] Connected
+[thread=5] Connected
+[thread=2]  Inference time in ms: 12.200117
+[thread=1]  Inference time in ms: 2.198458
+[thread=3]  Inference time in ms: 1.639366
+[thread=4]  Inference time in ms: 1.400948
+[thread=5]  Inference time in ms: 1.678467
+[thread=9] Connected
+[thread=7] Connected
+[thread=8] Connected
+[thread=6] Connected
+[thread=10] Connected
+[thread=9]  Inference time in ms: 11.783123
+[thread=7]  Inference time in ms: 2.413988
+[thread=8]  Inference time in ms: 1.621485
+[thread=6]  Inference time in ms: 1.518965
+[thread=10]  Inference time in ms: 1.454115
+
+----------------------
+Total elapsed time: 1057.101011 ms
+Average server inference time: 3.645492 ms
