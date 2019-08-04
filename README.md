@@ -209,3 +209,7 @@ though, that this probably an issue with the python sockets rather the hardware,
 but I'm not sure. Maybe in the future I'll implement the server with C++ and
 re-test.
 
+I've added some of my own results in the `results/` folder for reference.
+
+## Author
+Dimitris Tassopoulos <dimtass@gmail.com>
